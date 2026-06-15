@@ -1,0 +1,17 @@
+import random
+
+secret_numbers = random.randint(1, 20)
+print("I chose a number between 1 and 20, try to guess it ")
+
+while True:
+    guess = int(input("enter your guess:"))
+    if guess == secret_number:
+        print("good, your right 🎉.")
+        break
+
+    elif guess < secret_number:
+        print("num bigger than you guess")
+        break
+
+    else:
+        print("num smaller than your guess")
